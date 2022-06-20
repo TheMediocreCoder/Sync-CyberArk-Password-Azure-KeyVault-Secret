@@ -1,4 +1,4 @@
-# CyberArk_CPM_Azure_KeyVault
+# Sync CyberArk Passsword in Azure KeyVault
 This CyberArk CPM plugin can push or update or sync CyberArk passwords in Azure Key Vault.
 
 [Prerequists](#prerequists)
