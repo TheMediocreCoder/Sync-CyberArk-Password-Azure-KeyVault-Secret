@@ -1,13 +1,13 @@
 # Sync CyberArk Passswords in Azure KeyVault
 This CyberArk CPM plugin can push or update or sync passwords from CyberArk Vault to Azure Key Vault.
 
-[Prerequists](#prerequists)
+[Prerequisites](#prerequisites)
 
 [Configuration](#configuration)
 
 [Add Azure Key Vault Usage](#add-azure-key-vault-usage)
 
-#### Prerequists
+#### Prerequisites
 1. [Azure Az PowerShell Module] (https://docs.microsoft.com/en-us/powershell/azure/install-az-ps?view=azps-8.0.0)
 2. PowerShell version v5.0+
 3. CyberArk CPM - TPC
@@ -41,7 +41,7 @@ On the desired platform add the Usage Update-AzKV and ensure SearchForUsage is s
 
 ![Add Usage to Platform](docs/images/Add_Usage_To_Platform.jpg)
 
-2. To check SearchForUsages, Edit Platform -> Automatica Password Management -> General
+2. To check SearchForUsages, Edit Platform -> Automatic Password Management -> General
 
 ![Enable SearchForUsages](docs/images/Enable_SearchForUsages.jpg)
 
