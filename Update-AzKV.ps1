@@ -28,7 +28,7 @@ $Error.Clear()
 try
 {
     $creds = New-Object -typename System.Management.Automation.PSCredential($logon_username, ($logon_password | ConvertTo-SecureString -AsPlainText -Force))
-    Connect-AzAccount -Credential $creds | Out-Null
+    Connect-AzAccount -Credential $creds
     Write-Output "Successfully Connected to Azure using $logon_username"
 }
 catch
@@ -43,7 +43,7 @@ $SecureSecret = $Secret | ConvertTo-SecureString -Force -AsPlainText
 #Push/Update the Secret to the Azure KeyVault
 try
 {
-    Set-AzKeyVaultSecret -VaultName $KeyVaultName -Name $Secret_Name -SecretValue $SecureSecret | Out-Null
+    Set-AzKeyVaultSecret -VaultName $KeyVaultName -Name $Secret_Name -SecretValue $SecureSecret
     Write-Output "Pushed the secret successfully"
 }
 catch
