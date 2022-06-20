@@ -1,0 +1,16 @@
+    <Usage ID="Update-AzKV" PlatformBaseID="Update-AzKV" PlatformBaseProtocol="HTTPS" PlatformBaseType="Update-AzKV">
+      <Properties>
+        <Required>
+          <Property Name="KeyVaultName" />
+          <Property Name="SecretName" />
+        </Required>
+        <Optional />
+      </Properties>
+      <LinkedPasswords>
+        <Link Name="LogonAccount" PropertyIndex="1" />
+      </LinkedPasswords>
+      <DisplayedColumns>
+        <Column Name="SecretName" />
+        <Column Name="KeyVaultName" />
+      </DisplayedColumns>
+    </Usage>
